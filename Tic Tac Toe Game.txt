@@ -1,0 +1,38 @@
+ #Author: Harishan T
+ #Date: Feb 20, 2022
+ #Purpose: Create a Tic Tac Toe Game
+
+ #---------------------------------------------------------------------
+ #creating a board
+
+board = [
+  ["-","-","-"],
+  ["-","-","-"],
+  ["-","-","-"]
+]
+
+#print function for board
+
+def print_board(board):
+    for row in board:
+        for slot in row:
+            print(slot, end="     ")
+        print()
+print_board(board)
+
+def quit(user_input):
+    if user_input == "q":
+        return True
+    else:
+        return False
+
+def check_input(user_input):
+
+
+
+
+
+while True:
+    user_input = int(input("Please Enter a Number from 1 to 9 or enter \"q\" to quit: "))
+    if quit(user_input):
+        break
